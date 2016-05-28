@@ -5,7 +5,7 @@ android:
   - platform-tools
     - tools
     - build-tools-23.0.2
-    - android-22
+    - android-23
     - extra-android-m2repository
     - extra-google-m2repository
     - extra-android-support
@@ -15,6 +15,7 @@ android:
 before_install:
  - chmod +x gradlew
  - echo "sdk.dir=$ANDROID_HOME" > local.properties
+ - echo "ndk.dir=$ANDROID_HOME" > local.properties
 
 licenses:
  - 'android-sdk-preview-license-52d11cd2'
