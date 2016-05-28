@@ -12,3 +12,4 @@ android:
 
 before_install:
  - chmod +x gradlew
+ - echo "sdk.dir=$ANDROID_HOME" > local.properties
