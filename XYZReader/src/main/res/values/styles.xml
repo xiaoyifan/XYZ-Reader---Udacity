@@ -29,6 +29,17 @@
         <item name="android:textColor">#FF255F26</item>
     </style>
 
+    <style name="Theme.Bacon.List" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:paddingTop">@dimen/list_padding_top</item>
+        <item name="android:paddingLeft">@dimen/list_side_margin</item>
+        <item name="android:paddingRight">@dimen/list_side_margin</item>
+        <item name="android:paddingBottom">@dimen/list_padding_bottom</item>
+    </style>
+
     <style name="Theme.Bacon.Toolbar" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:background">@color/theme_primary_dark</item>
         <item name="android:layout_width">match_parent</item>
