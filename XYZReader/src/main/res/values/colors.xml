@@ -24,4 +24,7 @@
     <color name="ltgray">#ffe0e0e0</color>
     <color name="textBlack">#ff000000</color>
     <color name="textDarkGray">#ff444444</color>
+
+    <color name="theme_content_header">#333</color>
+    <color name="window_background">#FFF5F5F5</color>
 </resources>

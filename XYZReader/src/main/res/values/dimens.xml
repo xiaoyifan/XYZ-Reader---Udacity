@@ -12,4 +12,8 @@
     <dimen name="list_padding_top">65dp</dimen>
     <dimen name="list_padding_bottom">28dp</dimen>
 
+    <dimen name="card_margin">16dp</dimen>
+
+    <dimen name="cardview_margin">4dp</dimen>
+
 </resources>
