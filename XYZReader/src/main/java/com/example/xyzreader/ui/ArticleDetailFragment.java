@@ -104,6 +104,7 @@ public class ArticleDetailFragment extends Fragment implements
         mStatusBarColorDrawable = new ColorDrawable(0);
 
         final Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.toolbar);
+        //https://developer.android.com/training/implementing-navigation/ancestral.html
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
 //        ((ActionBarActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
