@@ -29,6 +29,7 @@
             <ImageView
                 android:id="@+id/photo"
                 style="@style/Theme.Bacon.Backdrop"
+                android:transitionName="@string/photo_shared_transition"
                 app:layout_collapseMode="parallax" />
 
             <android.support.v7.widget.Toolbar

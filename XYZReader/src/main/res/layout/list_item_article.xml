@@ -18,7 +18,8 @@
         <!--suppress AndroidLintContentDescription -->
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
-            style="@style/Theme.Bacon.Article.ListItem" />
+            style="@style/Theme.Bacon.Article.ListItem"
+            android:transitionName="@string/photo_shared_transition"/>
 
         <TextView
             android:id="@+id/article_title"
