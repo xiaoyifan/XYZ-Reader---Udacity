@@ -48,7 +48,7 @@ public class ArticleListActivity extends ActionBarActivity implements
                 refresh();
             }
         });
-        
+
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         getLoaderManager().initLoader(0, null, this);
 
