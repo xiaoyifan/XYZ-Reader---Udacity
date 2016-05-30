@@ -100,25 +100,6 @@ public class ArticleDetailFragment extends Fragment implements
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
-//        mDrawInsetsFrameLayout = (DrawInsetsFrameLayout)
-//                mRootView.findViewById(R.id.draw_insets_frame_layout);
-//        mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
-//            @Override
-//            public void onInsetsChanged(Rect insets) {
-//                mTopInset = insets.top;
-//            }
-//        });
-
-//        mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
-//        mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
-//            @Override
-//            public void onScrollChanged() {
-//                mScrollY = mScrollView.getScrollY();
-//                getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
-//                mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
-//                updateStatusBar();
-//            }
-//        });
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.appbar);
@@ -144,20 +125,6 @@ public class ArticleDetailFragment extends Fragment implements
         return mRootView;
     }
 
-//    private void updateStatusBar() {
-//        int color = 0;
-//        if (mPhotoView != null && mTopInset != 0 && mScrollY > 0) {
-//            float f = progress(mScrollY,
-//                    mStatusBarFullOpacityBottom - mTopInset * 3,
-//                    mStatusBarFullOpacityBottom - mTopInset);
-//            color = Color.argb((int) (255 * f),
-//                    (int) (Color.red(mMutedColor) * 0.9),
-//                    (int) (Color.green(mMutedColor) * 0.9),
-//                    (int) (Color.blue(mMutedColor) * 0.9));
-//        }
-//        mStatusBarColorDrawable.setColor(color);
-//        mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
-//    }
 
     static float progress(float v, float min, float max) {
         return constrain((v - min) / (max - min), 0, 1);
@@ -255,15 +222,4 @@ public class ArticleDetailFragment extends Fragment implements
         mCursor = null;
         bindViews();
     }
-
-//    public int getUpButtonFloor() {
-//        if (mPhotoContainerView == null || mPhotoView.getHeight() == 0) {
-//            return Integer.MAX_VALUE;
-//        }
-//
-//        // account for parallax
-//        return mIsCard
-//                ? (int) mPhotoContainerView.getTranslationY() + mPhotoView.getHeight() - mScrollY
-//                : mPhotoView.getHeight() - mScrollY;
-//    }
 }
