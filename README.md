@@ -1,6 +1,10 @@
 # XYZ-Reader---Udacity
 Project 5 in Udacity Android Developer Nanodegree
 
+# Walk through stories:
+
+![Video Walkthrough](reader.gif)
+
 ### Required Tasks
 * Download a zip file of the app.
 * Read the UI Review in the next node.
